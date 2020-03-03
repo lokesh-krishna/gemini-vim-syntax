@@ -3,10 +3,14 @@ UNAME := $(shell uname -s)
 SYN := /syntax
 FT := /ftdetect
 
-ifeq ($(UNAME), Haiku)
-ROOT = /boot/home/config/settings/vim
+ifeq ($(OS), Windows_NT)
+	ROOT := $(HOME)/vimfiles
 else
-ROOT := ~/.vim
+	ifeq ($(UNAME), Haiku)
+		ROOT := /boot/home/config/settings/vim
+	else
+		ROOT := ~/.vim
+	endif
 endif
 
 .PHONY: install
