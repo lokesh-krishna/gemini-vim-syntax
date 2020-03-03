@@ -22,9 +22,13 @@ syn match gmiHeader /^#\{1,3}.*$/
 syn match gmiLinkStart /^=>/ nextgroup=gmiLinkUrl skipwhite
 
 " An extremely naive way of handling the URL portion of the link line
-" TODO think about improving this
+" This is left naive in a deliberate attempt to be unambiguous about
+" what part of a link line gemini considers to be the URL, regardless
+" of whether or not it is a valid URL
 syn match gmiLinkUrl /\S\+/ contained nextgroup=gmiLinkTitle skipwhite
 
+" Skipping whitespace from the URL match all text, including whitespace,
+" until the end of the line
 syn match gmiLinkTitle /.*$/ contained
 
 " Handle list items
