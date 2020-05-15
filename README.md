@@ -33,9 +33,11 @@ I plan to update the syntax when and if the spec adds more items to *text/gemini
 
 ## Filetype
 
-This syntax is set up to be used with files labled with the **gmi** extension. For example:
+This syntax is set up to be used with files labled with the **gmi** or **gemini** extensions. For example:
 ```
 $ vim my_gemini_map.gmi
+# or
+$ vim my_gemini_map.gemini
 ```
 
 ## Surprises
