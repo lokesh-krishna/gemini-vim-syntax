@@ -17,8 +17,8 @@ endif
 install: ./syntax/gmi.vim ./ftdetect/gmi.vim
 	install -d ${ROOT}${SYN}
 	install -d ${ROOT}${FT}
-	install -m 0644 ./syntax/gmi.vim ${ROOT}${SYN}
-	install -m 0644 ./syntax/gmi.vim ${ROOT}${FT}
+	install -m 0644 .${SYN}/gmi.vim ${ROOT}${SYN}
+	install -m 0644 .${FT}/gmi.vim ${ROOT}${FT}
 
 .PHONY: remove
 remove:

@@ -1,7 +1,7 @@
 " Vim syntax file
 " " Language: gemini
 " " Maintainer: sloum < sloum AT rawtext.club >
-" " Latest Revision: 02 February 2020
+" " Latest Revision: 18 May 2020
 
 "
 " For version 5.x: Clear all syntax items
@@ -13,10 +13,10 @@ elseif exists("b:current_syntax")
 endif
 
 " Handle monospaced blocks
-syn region gmiMono start="```" end="```"
+syn region gmiMono start=/^```/ end=/^```/
 
 " Handle between one and three heading levels
-syn match gmiHeader /^#\{1,3}.*$/
+syn match gmiHeader /^#\{1,3}[^#].*$/
 
 " Start a link line
 syn match gmiLinkStart /^=>/ nextgroup=gmiLinkUrl skipwhite
