@@ -1,7 +1,7 @@
 " Vim syntax file
 " " Language: gemini
 " " Maintainer: sloum < sloum AT rawtext.club >
-" " Latest Revision: 18 May 2020
+" " Latest Revision: 08 Jun 2020
 
 "
 " For version 5.x: Clear all syntax items
@@ -45,4 +45,4 @@ hi def link gmiLinkStart Todo
 hi def link gmiLinkUrl Underlined
 hi def link gmiLinkTitle String
 hi def link gmiListItem Identifier
-hi def link gmiQuoteLine Include
+
