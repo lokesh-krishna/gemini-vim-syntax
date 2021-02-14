@@ -45,4 +45,4 @@ hi def link gmiLinkStart Todo
 hi def link gmiLinkUrl Underlined
 hi def link gmiLinkTitle String
 hi def link gmiListItem Identifier
-
+hi def link gmiQuoteLine Comment
