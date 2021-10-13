@@ -16,7 +16,8 @@ endif
 syn region gmiMono start=/^```/ end=/^```/
 
 " Handle between one and three heading levels
-syn match gmiHeader /^#\{1,3}[^#].*$/
+syn match gmiHeaderStart /^#\{1,3}[^#]/ nextgroup=gmiHeaderTitle skipwhite
+syn match gmiHeaderTitle /.*$/ contained
 
 " Start a link line
 syn match gmiLinkStart /^=>/ nextgroup=gmiLinkUrl skipwhite
@@ -32,17 +33,18 @@ syn match gmiLinkUrl /\S\+/ contained nextgroup=gmiLinkTitle skipwhite
 syn match gmiLinkTitle /.*$/ contained
 
 " Handle list items
-syn match gmiListItem /^\* .*$/
+syn match gmiListItem /^\*/
 
 " Handle quotes
 syn match gmiQuoteLine /^>.*/
 
 let b:current_syntax = "gmi"
 
-hi def link gmiMono Special
-hi def link gmiHeader Constant
-hi def link gmiLinkStart Todo
-hi def link gmiLinkUrl Underlined
-hi def link gmiLinkTitle String
-hi def link gmiListItem Identifier
+hi def link gmiMono markdownCode
+hi def link gmiHeaderStart Character
+hi def link gmiHeaderTitle Structure
+hi def link gmiLinkStart htmlArg
+hi def link gmiLinkUrl htmlLink
+hi def link gmiLinkTitle htmlTagN
+hi def link gmiListItem Character
 hi def link gmiQuoteLine Comment
