@@ -45,6 +45,6 @@ hi def link gmiHeaderStart Character
 hi def link gmiHeaderTitle Structure
 hi def link gmiLinkStart htmlArg
 hi def link gmiLinkUrl htmlLink
-hi def link gmiLinkTitle htmlTagN
+hi def link gmiLinkTitle htmlTag
 hi def link gmiListItem Character
 hi def link gmiQuoteLine Comment
