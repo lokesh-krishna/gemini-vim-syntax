@@ -47,4 +47,4 @@ hi def link gmiLinkStart htmlArg
 hi def link gmiLinkUrl htmlLink
 hi def link gmiLinkTitle String
 hi def link gmiListItem Character
-hi def link gmiQuoteLine Comment
+hi def link gmiQuoteLine markdownItalic
