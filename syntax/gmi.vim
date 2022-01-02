@@ -45,6 +45,6 @@ hi def link gmiHeaderStart Float
 hi def link gmiHeaderTitle htmlH1
 hi def link gmiLinkStart String
 hi def link gmiLinkUrl Statement
-hi def link gmiLinkTitle DiagnosticInfo
+hi def link gmiLinkTitle healthSuccess
 hi def link gmiListItem CmpItemMenu
 hi def link gmiQuoteLine Italic
