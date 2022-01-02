@@ -41,10 +41,10 @@ syn match gmiQuoteLine /^>.*/
 let b:current_syntax = "gmi"
 
 hi def link gmiMono markdownCode
-hi def link gmiHeaderStart Character
-hi def link gmiHeaderTitle Structure
-hi def link gmiLinkStart htmlArg
-hi def link gmiLinkUrl htmlLink
-hi def link gmiLinkTitle String
-hi def link gmiListItem Character
-hi def link gmiQuoteLine markdownItalic
+hi def link gmiHeaderStart Float
+hi def link gmiHeaderTitle htmlH1
+hi def link gmiLinkStart String
+hi def link gmiLinkUrl Statement
+hi def link gmiLinkTitle DiagnosticInfo
+hi def link gmiListItem CmpItemMenu
+hi def link gmiQuoteLine Italic
